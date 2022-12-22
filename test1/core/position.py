@@ -1,12 +1,11 @@
 import sdRDM
 
 from typing import Optional, Union
+from typing import Optional
 from pydantic import PrivateAttr
+from pydantic import Field
 from sdRDM.base.listplus import ListPlus
 from sdRDM.base.utils import forge_signature, IDGenerator
-
-from pydantic import Field
-from typing import Optional
 
 
 @forge_signature
@@ -16,9 +15,9 @@ class Position(sdRDM.DataModel):
         default_factory=IDGenerator("positionINDEX"),
         xml="@id",
     )
+
     position_id: Optional[int] = Field(
-        description="Equivalent position in the reference sequence",
-        default=None,
+        description="Equivalent position in the reference sequence", default=None
     )
 
     protein_sequence_id: Optional[int] = Field(
@@ -45,6 +44,7 @@ class Position(sdRDM.DataModel):
     )
 
     __repo__: Optional[str] = PrivateAttr(default="git://github.com/maxim945/test2.git")
+
     __commit__: Optional[str] = PrivateAttr(
-        default="c56a0a35e0d5a9e18206510331be8b8ccbc5aff5"
+        default="7865a6da3d494642b236b82838f53145c3ad4413"
     )
