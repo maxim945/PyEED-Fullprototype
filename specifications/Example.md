@@ -14,7 +14,7 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
   - Type: string
   - Description: The amino acid sequence of the protein sequence object.
 - __database_id__
-  - Type: integer
+  - Type: [Database](#Database)
   - Description: Data base ID
 - __pdb_id__
   - Type: string
@@ -24,7 +24,7 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
   - Type: string
   - Description: Identifier for the database
 - __organism_id__
-  - Type: integer
+  - Type: [Organism](#Organism)
   - Description: Corresponding organism 
 
 
