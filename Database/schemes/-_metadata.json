@@ -77,7 +77,7 @@
     },
     "docstring": null
   },
-  "Standard": {
+  "StandardNumberingScheme": {
     "attributes": {
       "standard_numering_scheme_id": {
         "description": "Equivalent position in the reference sequence"

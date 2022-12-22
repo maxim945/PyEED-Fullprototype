@@ -16,13 +16,13 @@ class Organism(sdRDM.DataModel):
         xml="@id",
     )
 
-    organism_id: Optional[str] = Field(
-        description="NCBI Taxonomy ID to identify the organism", default=None
-    )
-
     organism_name: Optional[str] = Field(description="Organism name", default=None)
 
     ncbi_taxonomy_id: Optional[str] = Field(
+        description="NCBI Taxonomy ID to identify the organism", default=None
+    )
+
+    organism_id: Optional[int] = Field(
         description="NCBI Taxonomy ID to identify the organism", default=None
     )
 
@@ -31,5 +31,5 @@ class Organism(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="e1211dd853b8bac271228f1380defc53d6ea7aa9"
+        default="54a1503ced69fed995f2afae6657bb6ed2bef492"
     )
