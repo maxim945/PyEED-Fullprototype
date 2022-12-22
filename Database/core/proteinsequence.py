@@ -1,14 +1,12 @@
 import sdRDM
 
 from typing import Optional, Union
-from pydantic import PrivateAttr
-from sdRDM.base.listplus import ListPlus
-from sdRDM.base.utils import forge_signature, IDGenerator
-
-from pydantic import Field
 from typing import List
 from typing import Optional
-
+from pydantic import PrivateAttr
+from pydantic import Field
+from sdRDM.base.listplus import ListPlus
+from sdRDM.base.utils import forge_signature, IDGenerator
 from .database import Database
 from .organism import Organism
 
@@ -20,14 +18,13 @@ class ProteinSequence(sdRDM.DataModel):
         default_factory=IDGenerator("proteinsequenceINDEX"),
         xml="@id",
     )
+
     protein_sequence_id: Optional[str] = Field(
-        description="Presented protein sequence",
-        default=None,
+        description="Presented protein sequence", default=None
     )
 
     name: Optional[str] = Field(
-        description="Systematic name of the protein.",
-        default=None,
+        description="Systematic name of the protein.", default=None
     )
 
     amino_acid_sequence: Optional[str] = Field(
@@ -35,27 +32,22 @@ class ProteinSequence(sdRDM.DataModel):
         default=None,
     )
 
-    database_id: Optional[Database] = Field(
-        description="Data base ID",
-        default=None,
-    )
+    database_id: Optional[Database] = Field(description="Data base ID", default=None)
 
     pdb_id: List[str] = Field(
-        description="Identifier for the PDB database",
-        default_factory=ListPlus,
+        description="Identifier for the PDB database", default_factory=ListPlus
     )
 
     database_entry: Optional[str] = Field(
-        description="Identifier for the database",
-        default=None,
+        description="Identifier for the database", default=None
     )
 
     organism_id: Optional[Organism] = Field(
-        description="Corresponding organism",
-        default=None,
+        description="Corresponding organism", default=None
     )
 
     __repo__: Optional[str] = PrivateAttr(default="git://github.com/maxim945/test2.git")
+
     __commit__: Optional[str] = PrivateAttr(
-        default="2659f3bcd1129f2baa181f813c99563a59096644"
+        default="5600128b772670b3f846f963e6299b065f6d129f"
     )
