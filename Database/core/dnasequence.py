@@ -6,6 +6,7 @@ from pydantic import PrivateAttr
 from pydantic import Field
 from sdRDM.base.listplus import ListPlus
 from sdRDM.base.utils import forge_signature, IDGenerator
+from .proteinsequence import ProteinSequence
 
 
 @forge_signature
@@ -15,8 +16,6 @@ class DNASequence(sdRDM.DataModel):
         default_factory=IDGenerator("dnasequenceINDEX"),
         xml="@id",
     )
-
-    protein_sequence_id: str = Field(..., description="Presented protein sequence")
 
     dna_sequence_id: Optional[str] = Field(
         description=(
@@ -35,8 +34,14 @@ class DNASequence(sdRDM.DataModel):
         description="NCBI Taxonomy ID to identify the organism", default=None
     )
 
-    __repo__: Optional[str] = PrivateAttr(default="git://github.com/maxim945/test2.git")
+    protein_sequence_id: Optional[ProteinSequence] = Field(
+        description="Presented protein sequence", default=None
+    )
+
+    __repo__: Optional[str] = PrivateAttr(
+        default="git://github.com/maxim945/PyEED-Fullprototype.git"
+    )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="5600128b772670b3f846f963e6299b065f6d129f"
+        default="e1211dd853b8bac271228f1380defc53d6ea7aa9"
     )

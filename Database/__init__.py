@@ -1,4 +1,4 @@
 import os
 
-__URL__ = "git://github.com/maxim945/test2.git"
+__URL__ = "git://github.com/maxim945/PyEED-Fullprototype.git"
 __COMMIT__ = ""
