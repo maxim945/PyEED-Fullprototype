@@ -94,14 +94,14 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
   - Type: integer
   - Description: Position that is equivalent to the reference sequence position that is also given
 - __annotation_id__
-  - Type: [Annotation](#Annotation)
+  - Type: integer
   - Description: Function that is found in the annotated amino acid or sub-sequence
 
   
 ### Annotation
 
 - __protein_sequence_id__
-  - Type: integer
+  - Type: [ProteinSequence](#ProteinSequence)
   - Description: Start position of the annotation. A single start position without an end corresponds to a single amino acid
 - __start_position__
   - Type: integer
