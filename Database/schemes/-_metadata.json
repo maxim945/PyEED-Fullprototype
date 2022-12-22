@@ -31,11 +31,11 @@
   },
   "DNASequence": {
     "attributes": {
-      "dna_sequence_id": {
-        "description": "Reference to the Translated DNA from the matching Protein sequence"
-      },
       "protein_sequence_id": {
         "description": "Presented protein sequence"
+      },
+      "dna_sequence_id": {
+        "description": "Reference to the Translated DNA from the matching Protein sequence"
       },
       "database_id": {
         "description": "Data base ID"
@@ -79,14 +79,14 @@
   },
   "StandardNumberingScheme": {
     "attributes": {
+      "protein_sequence_id": {
+        "description": "Presented protein sequence"
+      },
       "standard_numering_scheme_id": {
         "description": "Equivalent position in the reference sequence"
       },
       "standard_numering_scheme_name": {
         "description": "Position that is equivalent to the reference sequence position that is also given"
-      },
-      "protein_sequence_id": {
-        "description": "Presented protein sequence"
       }
     },
     "docstring": null

@@ -49,5 +49,5 @@ class Position(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="54a1503ced69fed995f2afae6657bb6ed2bef492"
+        default="ac4e18bea4449d007023939606bfc5ad7737c2d4"
     )
