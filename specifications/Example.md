@@ -37,19 +37,19 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
   - Type: [ProteinSequence](#ProteinSequence)
   - Description: Presented protein sequence
 - __database_id__
-  - Type: integer
+  - Type: [Database](#Database)
   - Description: Data base ID
 - __database_entry__
   - Type: string
   - Description: Identifier for the database
 - __organism_id__
-  - Type: integer
+  - Type: [Organism](#Organism)
   - Description: NCBI Taxonomy ID to identify the organism
   - 
 ### Organism
 
 - __organism_id__
-  - Type: string
+  - Type: [Organism](#Organism)
   - Description: NCBI Taxonomy ID to identify the organism
 - __organism_name__
   - Type: string
@@ -70,7 +70,7 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
   - Type: integer
   - Description: Position in the sequence where the domain ends
 
-### Standard Numbering Scheme
+### StandardNumberingScheme
 
 - __standard_numering_scheme_id__
   - Type: integer
@@ -79,7 +79,7 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
   - Type: integer
   - Description: Position that is equivalent to the reference sequence position that is also given
 - __protein_sequence_id__
-  - Type: string
+  - Type: [ProteinSequence](#ProteinSequence)
   - Description: Presented protein sequence
 
 ### Position
@@ -88,13 +88,13 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
   - Type: integer
   - Description: Equivalent position in the reference sequence
 - __protein_sequence_id__
-  - Type: integer
+  - Type: [ProteinSequence](#ProteinSequence)
   - Description: Position that is equivalent to the reference sequence position that is also given
 - __standard_numbering_scheme_id__
   - Type: integer
   - Description: Position that is equivalent to the reference sequence position that is also given
 - __annotation_id__
-  - Type: integer
+  - Type: [Annotation](#Annotation)
   - Description: Function that is found in the annotated amino acid or sub-sequence
 
   
