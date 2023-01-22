@@ -7,8 +7,8 @@ from pydantic import Field
 from sdRDM.base.listplus import ListPlus
 from sdRDM.base.utils import forge_signature, IDGenerator
 from .proteinsequence import ProteinSequence
-from .dnadatabase import DNADatabase
-from .dnaorganism import DNAOrganism
+from .database import Database
+from .organism import Organism
 
 
 @forge_signature
@@ -26,17 +26,19 @@ class DNASequence(sdRDM.DataModel):
         default=None,
     )
 
-    database_entry: Optional[str] = Field(
-        description="Identifier for the database", default=None
-    )
-
     protein_sequence_id: Optional[ProteinSequence] = Field(
         description="Presented protein sequence", default=None
     )
 
-    database_id: Optional[DNADatabase] = Field(description="Data base ID", default=None)
+    dna_database_id: Optional[Database] = Field(
+        description="Data base ID", default=None
+    )
 
-    organism_id: Optional[DNAOrganism] = Field(
+    dna_database_entry: Optional[str] = Field(
+        description="Identifier for the database", default=None
+    )
+
+    dna_organism_id: Optional[Organism] = Field(
         description="NCBI Taxonomy ID to identify the organism", default=None
     )
 
@@ -45,5 +47,5 @@ class DNASequence(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="35a45da72b076b37d11cbe19c2754ecba341f7f3"
+        default="a1180e99759917986660f7deee422ce5c322f9d3"
     )

@@ -31,5 +31,5 @@ class Organism(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="ac4e18bea4449d007023939606bfc5ad7737c2d4"
+        default="a1180e99759917986660f7deee422ce5c322f9d3"
     )
