@@ -32,10 +32,6 @@ class ProteinSequence(sdRDM.DataModel):
         default=None,
     )
 
-    pdb_id: List[str] = Field(
-        description="Identifier for the PDB database", default_factory=ListPlus
-    )
-
     protein_database_id: Optional[Database] = Field(
         description="Data base ID", default=None
     )
@@ -53,5 +49,5 @@ class ProteinSequence(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="0e618cf75b144deadcfb3e6c594570db8990bcfc"
+        default="1ba4ebf2eb372b9bb03c83af45aad3c49d42d092"
     )

@@ -16,10 +16,6 @@
       "protein_database_id": {
         "description": "Data base ID"
       },
-      "pdb_id": {
-        "description": "Identifier for the PDB database",
-        "multiple": "True"
-      },
       "protein_database_entry": {
         "description": "Identifier for the database"
       },
