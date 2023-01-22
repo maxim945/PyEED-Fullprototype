@@ -22,14 +22,10 @@ class Organism(sdRDM.DataModel):
         description="NCBI Taxonomy ID to identify the organism", default=None
     )
 
-    organism_id: Optional[int] = Field(
-        description="NCBI Taxonomy ID to identify the organism", default=None
-    )
-
     __repo__: Optional[str] = PrivateAttr(
         default="git://github.com/maxim945/PyEED-Fullprototype.git"
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="8fff177c7149599ef54caa3cd8c4dd875284a127"
+        default="cd8efeebd76513b76d23233aa48272e85b4a0ff8"
     )
