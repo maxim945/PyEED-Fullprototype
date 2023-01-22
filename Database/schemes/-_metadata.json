@@ -30,6 +30,9 @@
       "dna_sequence_id": {
         "description": "Reference to the Translated DNA from the matching Protein sequence"
       },
+      "nucleotide_sequence": {
+        "description": "The amino acid sequence of the protein sequence object."
+      },
       "dna_database_id": {
         "description": "Data base ID"
       },

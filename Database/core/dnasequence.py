@@ -38,10 +38,15 @@ class DNASequence(sdRDM.DataModel):
         description="Data base ID", default=None
     )
 
+    nucleotide_sequence: Optional[str] = Field(
+        description="The amino acid sequence of the protein sequence object.",
+        default=None,
+    )
+
     __repo__: Optional[str] = PrivateAttr(
         default="git://github.com/maxim945/PyEED-Fullprototype.git"
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="cd8efeebd76513b76d23233aa48272e85b4a0ff8"
+        default="5f478252c20ad26b00aea4398303bac3b2152647"
     )
