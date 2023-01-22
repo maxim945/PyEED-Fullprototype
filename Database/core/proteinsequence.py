@@ -48,10 +48,12 @@ class ProteinSequence(sdRDM.DataModel):
         description="Corresponding organism", default=None
     )
 
+    index: Optional[int] = Field(description="indexing method", default=None)
+
     __repo__: Optional[str] = PrivateAttr(
         default="git://github.com/maxim945/PyEED-Fullprototype.git"
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="a1180e99759917986660f7deee422ce5c322f9d3"
+        default="554d49fe10c158c6d8dd7a018c6798092777529d"
     )

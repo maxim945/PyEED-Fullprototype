@@ -4,6 +4,9 @@
   "external": {},
   "ProteinSequence": {
     "attributes": {
+      "index": {
+        "description": "indexing method"
+      },
       "protein_sequence_id": {
         "description": "Presented protein sequence"
       },
