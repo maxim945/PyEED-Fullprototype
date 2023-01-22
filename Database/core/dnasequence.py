@@ -34,10 +34,6 @@ class DNASequence(sdRDM.DataModel):
         description="Data base ID", default=None
     )
 
-    dna_database_entry: Optional[str] = Field(
-        description="Identifier for the database", default=None
-    )
-
     dna_organism_id: Optional[Organism] = Field(
         description="NCBI Taxonomy ID to identify the organism", default=None
     )
@@ -47,5 +43,5 @@ class DNASequence(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="1ba4ebf2eb372b9bb03c83af45aad3c49d42d092"
+        default="8fff177c7149599ef54caa3cd8c4dd875284a127"
     )

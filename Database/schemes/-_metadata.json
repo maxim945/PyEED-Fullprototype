@@ -16,9 +16,6 @@
       "protein_database_id": {
         "description": "Data base ID"
       },
-      "protein_database_entry": {
-        "description": "Identifier for the database"
-      },
       "protein_organism_id": {
         "description": "Corresponding organism"
       }
@@ -35,9 +32,6 @@
       },
       "dna_database_id": {
         "description": "Data base ID"
-      },
-      "dna_database_entry": {
-        "description": "Identifier for the database"
       },
       "dna_organism_id": {
         "description": "NCBI Taxonomy ID to identify the organism"
