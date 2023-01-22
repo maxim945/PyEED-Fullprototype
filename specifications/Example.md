@@ -13,18 +13,18 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
 - __amino_acid_sequence__
   - Type: string
   - Description: The amino acid sequence of the protein sequence object.
-- __database_id__
+- __protein_database_id__
   - Type: [ProteinDatabase](#ProteinDatabase)
   - Description: Data base ID
 - __pdb_id__
   - Type: string
   - Description: Identifier for the PDB database
   - Multiple: True
-- __database_entry__
+- __protein_database_entry__
   - Type: string
   - Description: Identifier for the database
-- __organism_id__
-  - Type: [ProteinOrganism](#ProteinOrganism)
+- __protein_organism_id__
+  - Type: [Organism](#Organism)
   - Description: Corresponding organism 
 
 
@@ -37,17 +37,17 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
 - __dna_sequence_id__
   - Type: string
   - Description: Reference to the Translated DNA from the matching Protein sequence
-- __database_id__
-  - Type: [DNADatabase](#DNADatabase)
+- __dna_database_id__
+  - Type: [Database](#Database)
   - Description: Data base ID
-- __database_entry__
+- __dna_database_entry__
   - Type: string
   - Description: Identifier for the database
-- __organism_id__
-  - Type: [DNAOrganism](#DNAOrganism)
+- __dna_organism_id__
+  - Type: [Organism](#Organism)
   - Description: NCBI Taxonomy ID to identify the organism
   - 
-### ProteinOrganism
+### Organism
 
 - __organism_id__
   - Type: integer
@@ -59,30 +59,7 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
   - Type: string
   - Description: NCBI Taxonomy ID to identify the organism
 
-### DNAOrganism
-
-- __organism_id__
-  - Type: integer
-  - Description: NCBI Taxonomy ID to identify the organism
-- __organism_name__
-  - Type: string
-  - Description: Organism name
-- __ncbi_taxonomy_id__
-  - Type: string
-  - Description: NCBI Taxonomy ID to identify the organism
-
-### ProteinDatabase
-
-- __database_id__
-  - Type: string
-  - Description: Name of the annotated domain
-- __database__
-  - Type: integer
-  - Description: Position in the sequence where the domain starts
-- __link_to_database__
-  - Type: integer
-  - Description: Position in the sequence where the domain ends
-### DNADatabase
+### Database
 
 - __database_id__
   - Type: string
