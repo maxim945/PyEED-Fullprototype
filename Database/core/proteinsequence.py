@@ -7,8 +7,8 @@ from pydantic import PrivateAttr
 from pydantic import Field
 from sdRDM.base.listplus import ListPlus
 from sdRDM.base.utils import forge_signature, IDGenerator
-from .database import Database
-from .organism import Organism
+from .proteindatabase import ProteinDatabase
+from .proteinorganism import ProteinOrganism
 
 
 @forge_signature
@@ -32,8 +32,6 @@ class ProteinSequence(sdRDM.DataModel):
         default=None,
     )
 
-    database_id: Optional[Database] = Field(description="Data base ID", default=None)
-
     pdb_id: List[str] = Field(
         description="Identifier for the PDB database", default_factory=ListPlus
     )
@@ -42,7 +40,11 @@ class ProteinSequence(sdRDM.DataModel):
         description="Identifier for the database", default=None
     )
 
-    organism_id: Optional[Organism] = Field(
+    database_id: Optional[ProteinDatabase] = Field(
+        description="Data base ID", default=None
+    )
+
+    organism_id: Optional[ProteinOrganism] = Field(
         description="Corresponding organism", default=None
     )
 
@@ -51,5 +53,5 @@ class ProteinSequence(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="ac4e18bea4449d007023939606bfc5ad7737c2d4"
+        default="35a45da72b076b37d11cbe19c2754ecba341f7f3"
     )

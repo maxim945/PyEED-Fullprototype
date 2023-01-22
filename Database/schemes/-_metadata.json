@@ -49,7 +49,7 @@
     },
     "docstring": null
   },
-  "Organism": {
+  "ProteinOrganism": {
     "attributes": {
       "organism_id": {
         "description": "NCBI Taxonomy ID to identify the organism"
@@ -63,7 +63,35 @@
     },
     "docstring": null
   },
-  "Database": {
+  "DNAOrganism": {
+    "attributes": {
+      "organism_id": {
+        "description": "NCBI Taxonomy ID to identify the organism"
+      },
+      "organism_name": {
+        "description": "Organism name"
+      },
+      "ncbi_taxonomy_id": {
+        "description": "NCBI Taxonomy ID to identify the organism"
+      }
+    },
+    "docstring": null
+  },
+  "ProteinDatabase": {
+    "attributes": {
+      "database_id": {
+        "description": "Name of the annotated domain"
+      },
+      "database": {
+        "description": "Position in the sequence where the domain starts"
+      },
+      "link_to_database": {
+        "description": "Position in the sequence where the domain ends"
+      }
+    },
+    "docstring": null
+  },
+  "DNADatabase": {
     "attributes": {
       "database_id": {
         "description": "Name of the annotated domain"
