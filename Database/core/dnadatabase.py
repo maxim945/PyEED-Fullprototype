@@ -29,5 +29,5 @@ class DNADatabase(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="5f478252c20ad26b00aea4398303bac3b2152647"
+        default="1a5ac56496eac9cfaae15e55f964d072994716ee"
     )

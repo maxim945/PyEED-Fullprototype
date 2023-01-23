@@ -81,10 +81,13 @@
         "description": "Presented protein sequence"
       },
       "standard_numering_scheme_id": {
-        "description": "Equivalent position in the reference sequence"
+        "description": "the id of the scheme"
       },
       "standard_numering_scheme_name": {
-        "description": "Position that is equivalent to the reference sequence position that is also given"
+        "description": "the name of each standard numbering"
+      },
+      "standard_numering_scheme": {
+        "description": "the numbering scheme for each sequence"
       }
     },
     "docstring": null

@@ -17,20 +17,20 @@ class StandardNumberingScheme(sdRDM.DataModel):
         xml="@id",
     )
 
-    standard_numering_scheme_id: Optional[int] = Field(
-        description="Equivalent position in the reference sequence", default=None
-    )
-
-    standard_numering_scheme_name: Optional[int] = Field(
-        description=(
-            "Position that is equivalent to the reference sequence position that is"
-            " also given"
-        ),
-        default=None,
-    )
-
     protein_sequence_id: Optional[ProteinSequence] = Field(
         description="Presented protein sequence", default=None
+    )
+
+    standard_numering_scheme_id: Optional[int] = Field(
+        description="the id of the scheme", default=None
+    )
+
+    standard_numering_scheme_name: Optional[str] = Field(
+        description="the name of each standard numbering", default=None
+    )
+
+    standard_numering_scheme: Optional[str] = Field(
+        description="the numbering scheme for each sequence", default=None
     )
 
     __repo__: Optional[str] = PrivateAttr(
@@ -38,5 +38,5 @@ class StandardNumberingScheme(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="5f478252c20ad26b00aea4398303bac3b2152647"
+        default="1a5ac56496eac9cfaae15e55f964d072994716ee"
     )
