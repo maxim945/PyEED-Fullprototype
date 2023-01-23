@@ -74,10 +74,13 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
   - Description: Presented protein sequence
 - __standard_numering_scheme_id__
   - Type: integer
-  - Description: Equivalent position in the reference sequence
+  - Description: the id of the scheme
 - __standard_numering_scheme_name__
-  - Type: integer
-  - Description: Position that is equivalent to the reference sequence position that is also given
+  - Type: string
+  - Description: the name of each standard numbering
+- __standard_numering_scheme__
+  - Type: string
+  - Description: the numbering scheme for each sequence
 
 
 ### Position
