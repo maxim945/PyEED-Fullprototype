@@ -36,7 +36,7 @@ class ProteinSequence(sdRDM.DataModel):
         description="Corresponding organism", default=None
     )
 
-    protein_database_id: Optional[ProteinDatabase] = Field(
+    protein_database_name: Optional[ProteinDatabase] = Field(
         description="Data base ID", default=None
     )
 
@@ -45,5 +45,5 @@ class ProteinSequence(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="1a5ac56496eac9cfaae15e55f964d072994716ee"
+        default="d50cacbfa3e8bbdab55e9a18bd4941c6c4e570db"
     )

@@ -13,7 +13,7 @@
       "amino_acid_sequence": {
         "description": "The amino acid sequence of the protein sequence object."
       },
-      "protein_database_id": {
+      "protein_database_name": {
         "description": "Data base ID"
       },
       "protein_organism_id": {
