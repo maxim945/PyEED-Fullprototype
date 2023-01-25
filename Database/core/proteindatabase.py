@@ -29,5 +29,5 @@ class ProteinDatabase(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="c15f82569a0ad71f8d28038fa1d843fe0ef91dcc"
+        default="b437a2d5733132719ffa9e814b641d13d59a663e"
     )
