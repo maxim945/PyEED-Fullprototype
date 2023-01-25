@@ -38,5 +38,5 @@ class StandardNumberingScheme(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="d50cacbfa3e8bbdab55e9a18bd4941c6c4e570db"
+        default="66b4ad2f401292013f242fc54790ce4069bb217d"
     )
