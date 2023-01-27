@@ -45,5 +45,5 @@ class ProteinSequence(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="eb74cd0eba8d31a3cc3e02edc10c0f4865598017"
+        default="ee7c680c49c24eb57321730935a931d1151e6541"
     )
