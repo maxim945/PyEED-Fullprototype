@@ -16,11 +16,11 @@ class ProteinDatabase(sdRDM.DataModel):
         xml="@id",
     )
 
-    database: Optional[int] = Field(
+    database: Optional[str] = Field(
         description="Position in the sequence where the domain starts", default=None
     )
 
-    link_to_database: Optional[int] = Field(
+    link_to_database: Optional[str] = Field(
         description="Position in the sequence where the domain ends", default=None
     )
 
@@ -29,5 +29,5 @@ class ProteinDatabase(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="1bd572b9618d5e45e11bf9079d8562460318eab0"
+        default="83c6eb115edc9de61b3b418d3f312d152d16509f"
     )

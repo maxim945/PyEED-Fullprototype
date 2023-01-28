@@ -31,13 +31,13 @@ classDiagram
     }
     
     class ProteinDatabase {
-        +integer database
-        +integer link_to_database
+        +string database
+        +string link_to_database
     }
     
     class DNADatabase {
-        +integer database
-        +integer link_to_database
+        +string database
+        +string link_to_database
     }
     
     class StandardNumberingScheme {
